@@ -1,4 +1,4 @@
-import { setToken } from "./tokenService"
+import { setToken, getUserFromToken, removeToken } from "./tokenService"
 
 const BASE_URL = 'http://localhost:3001/api/users'
 
@@ -31,10 +31,12 @@ function login(credentials) {
 
 //logout
 function logout() {
+    removeToken();
 }
 
 //getUser
 function getUser() {
+    return getUserFromToken()
 }
 
 

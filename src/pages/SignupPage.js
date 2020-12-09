@@ -1,27 +1,32 @@
 import { signup } from '../services/userService';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-
 export default function SignupPage(props) {
-
     const [ formState, setFormState ] = useState({
         name: "",
         email: "",
         password: ""
     });
-
     function formValid() {
         return !!(formState.name && formState.email && formState.password)
     }
-
     function handleChange(event) {
+        setFormState(prevState => ({
+            ...prevState,
+            [event.target.name]: event.target.value
+        }));
     }
-
-    function handleSubmit(event) {
+    async function handleSubmit(event) {
         event.preventDefault();
         if(!formValid()) return;
+        try {
+            await signup(formState);
+            props.handleSoL()
+            // calling a helper function defined in App.js to add the user to state
+        } catch (error) {
+            alert(error.message);
+        }
     }
-
     return (
         <main className="Page">
             <h1>Sign Up</h1>
