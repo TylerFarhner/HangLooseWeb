@@ -12,6 +12,7 @@ export default function MySpots(props) {
             <SpotCard />
             <SpotCard />
             <Link to="/edit">Update a spot</Link>
+            {/* Should put edit spot inside spot card, inside of spotcardS */}
         </main>
     )
 }
