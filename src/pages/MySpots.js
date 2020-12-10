@@ -2,6 +2,7 @@ import SpotCard from "../components/SpotCard/SpotCard";
 
 // import SpotCard from '../components/SpotCard/SpotCard'
 // dont need to import again I guess *shrugs*
+import { Link } from 'react-router-dom'
 
 export default function MySpots(props) {
     return (
@@ -10,7 +11,7 @@ export default function MySpots(props) {
             <SpotCard />
             <SpotCard />
             <SpotCard />
-
+            <Link to="/edit">Update a spot</Link>
         </main>
     )
 }
