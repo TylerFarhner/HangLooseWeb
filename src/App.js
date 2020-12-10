@@ -33,6 +33,11 @@ function App(props) {
     props.history.push('/dashboard')
   }
 
+  function handleCreate () {
+    //  route user back to their spots
+    props.history.push('/myspots')
+  }
+
 function handleLogout() {
   logout(); // this removes the token from localStorage
   setUserState({ user: null }) // set user to null
@@ -59,7 +64,7 @@ function handleLogout() {
           <MySpots/>
         }/>
         <Route exact path ='/new' render={props=>
-          <NewSpot/>
+          <NewSpot handleCreate={handleCreate}/>
         }/>
         <Route exact path ='/edit' render={props=>
           <EditSpot/>
