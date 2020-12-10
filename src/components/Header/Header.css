@@ -25,8 +25,8 @@
 }
 
 .logoImg {
-    margin: 10px;
     padding: 10px;
     height: 25%;
     width: 25%;
+    /* TODO: round, responsive */
 }
