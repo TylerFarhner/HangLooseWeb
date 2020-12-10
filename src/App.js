@@ -10,6 +10,7 @@ import HomePage from './pages/HomePage'
 import DashboardPage from './pages/DashboardPage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
+import MySpots from './pages/MySpots'
 
 // ------switch and Route import-----
 import { Switch, Route, withRouter} from 'react-router-dom'
@@ -50,6 +51,9 @@ function handleLogout() {
         }/>
         <Route exact path ='/signup' render={props=>
           <SignupPage handleSoL={handleSoL}/>
+        }/> 
+        <Route exact path ='/myspots' render={props=>
+          <MySpots/>
         }/>
       </Switch>
     <Footer/>
