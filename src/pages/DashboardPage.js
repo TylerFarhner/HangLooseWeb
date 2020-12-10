@@ -1,7 +1,7 @@
 export default function DashboardPage(props) {
     return (
         <main className="Page">
-            <h1>Dashboard Page</h1>
+            <h1>Spots Dashboard</h1>
         </main>
     )
 }
