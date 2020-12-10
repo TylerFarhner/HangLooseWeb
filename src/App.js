@@ -11,7 +11,9 @@ import DashboardPage from './pages/DashboardPage'
 import LoginPage from './pages/LoginPage'
 import SignupPage from './pages/SignupPage'
 import MySpots from './pages/MySpots'
+import NewSpot from './pages/NewSpot'
 import EditSpot from './pages/EditSpot'
+import DeleteSpot from './pages/DeleteSpot'
 
 // ------switch and Route import-----
 import { Switch, Route, withRouter} from 'react-router-dom'
@@ -56,8 +58,14 @@ function handleLogout() {
         <Route exact path ='/myspots' render={props=>
           <MySpots/>
         }/>
+        <Route exact path ='/new' render={props=>
+          <NewSpot/>
+        }/>
         <Route exact path ='/edit' render={props=>
           <EditSpot/>
+        }/>
+        <Route exact path ='/delete' render={props=>
+          <DeleteSpot/>
         }/>
       </Switch>
     <Footer/>

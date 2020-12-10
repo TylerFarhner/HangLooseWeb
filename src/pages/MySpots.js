@@ -11,8 +11,10 @@ export default function MySpots(props) {
             <SpotCard />
             <SpotCard />
             <SpotCard />
+            <Link to="/new">Add a spot</Link>
             <Link to="/edit">Update a spot</Link>
-            {/* Should put edit spot inside spot card, inside of spotcardS */}
+            <Link to="/delete">Delete a spot</Link>
+            {/* Should put edit/delete spot inside spot card, inside of spotcardS */}
         </main>
     )
 }
