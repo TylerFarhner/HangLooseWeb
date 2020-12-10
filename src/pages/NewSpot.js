@@ -35,27 +35,27 @@ export default function NewSpot(props) {
         <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <div className="col-sm-12">
-                        <input onChange={handleChange} value={formState.name} name="name" placeholder="Spot Name" className="form-control" type="text"/>
+                        <input value={formState.name} name="name" placeholder="Spot Name" className="form-control" type="text" onChange={handleChange}/>
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-sm-12">
-                        <input onChange={handleChange} value={formState.description} name="description" placeholder="Description" className="form-control" type="text"/>
+                        <input value={formState.description} name="description" placeholder="Description" className="form-control" type="text" onChange={handleChange}/>
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-sm-12">
-                        <input onChange={handleChange} value={formState.difficulty} name="difficulty" placeholder="Difficulty (1-5)" className="form-control" type="text"/>
+                        <input value={formState.difficulty} name="difficulty" placeholder="Difficulty (1-5)" className="form-control" type="text" onChange={handleChange}/>
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-sm-12">
-                        <input onChange={handleChange} value={formState.location} name="location" placeholder="location" className="form-control" type="text"/>
+                        <input value={formState.location} name="location" placeholder="location" className="form-control" type="text" onChange={handleChange}/>
                     </div>
                 </div>
                 <div className="form-group">
                     <div className="col-sm-12">
-                        <input onChange={handleChange} value={formState.state} name="state" placeholder="State" className="form-control" type="text"/>
+                        <input value={formState.state} name="state" placeholder="State" className="form-control" type="text" onChange={handleChange}/>
                     </div>
                 </div>
                 <div className="form-group">
