@@ -3,6 +3,7 @@ import SpotCard from "../components/SpotCard/SpotCard";
 // import SpotCard from '../components/SpotCard/SpotCard'
 // dont need to import again I guess *shrugs*
 import { Link } from 'react-router-dom'
+import { fetchSpotData } from '../services/spotService'
 
 export default function MySpots(props) {
     return (

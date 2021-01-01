@@ -1,3 +1,4 @@
+import React from 'react'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { create } from '../services/spotService'
@@ -31,7 +32,7 @@ export default function NewSpot(props) {
     
     return (
         <main className="Page">
-        <h1>New Spot</h1>
+        <h1>Create New Spot</h1>
         <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <div className="col-sm-12">

@@ -19,12 +19,14 @@ import DeleteSpot from './pages/DeleteSpot'
 import { Switch, Route, withRouter} from 'react-router-dom'
 
 import { getUser, logout } from  './services/userService'
+import { create } from './services/spotService';
 
 function App(props) {
-  // component state
+  // --------------component state------------------------
   const [ userState, setUserState ] = useState({ user: getUser()})
 
-  // Helper functions
+  // --------------Helper functions-----------------------
+  
   // handleSignupOrLogin
   function handleSoL () {
     // place user into state using the setter function
@@ -34,8 +36,9 @@ function App(props) {
   }
 
   function handleCreate () {
+    create();
     //  route user back to their spots
-    props.history.push('/myspots')
+    props.history.push('/')
   }
 
 function handleLogout() {
