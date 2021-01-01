@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header(props) {
     return (
         <header className="Header">
-            <Link to="/dashboard">
+            <Link to="/">
                 {/* <h1>LOGO Here</h1> */}
                 <img className="logoImg" src={"https://ih1.redbubble.net/image.479940718.8112/flat,750x1000,075,f.u2.jpg"} alt="logo" />
             </Link>

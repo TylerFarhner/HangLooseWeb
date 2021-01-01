@@ -42,7 +42,7 @@ export default function HomePage(props) {
         <main className="Page">
             <h1>Hang Loose</h1>
             <Map lat={appData.lat} lng={appData.lng}/>
-            <p>Welcome to hangloose, this is what this is, etc etc, please <Link to="/signup">Signup</Link> or <Link to="/login">Login</Link> to add your own spots!</p>
+            <p>Welcome to Hang Loose, A community site of locations aka "spots" to hang your hammock! please <Link to="/signup">Signup</Link> or <Link to="/login">Login</Link> to view or add spots!</p>
         </main>
 
         </div>
